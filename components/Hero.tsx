@@ -1,12 +1,12 @@
-import React from "react"
-import { BigButton, SmallButton } from "../ReusableComponents"
-import Image from "next/image"
+import React from 'react';
+import { BigButton, SmallButton } from './ReusableComponents';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <div className="w-[100%] h-auto xl:mb-20 max-xl:mb-12 ">
       <div className="flex items-center max-md:flex-col">
-        <div className="w-[50%] container mt-32 max-md:mt-12 max-md:w-[100%] ">
+        <div className="w-[50%]  container mt-32 max-md:mt-12 max-md:w-[100%] ">
           <h1
             className=" ml-20 w-[90%] font-yatra font-[400] text-[70px] leading-[90px] text-[#282828]
           max-sm:text-[40px] max-sm:leading-[50px] max-sm:w-[100%] max-sm:ml-0
@@ -17,7 +17,7 @@ const Hero = () => {
           <div className=" ml-20 max-md:hidden">
             <div className="flex">
               <div className="mr-3 my-auto">
-                <img src="../SVG.png" alt="Picture of the author" />
+                <Image src="/SVG.png" alt="Picture of the author" width={100} height={1000}/>
               </div>
               <div className="border-l-[1px] border-[#282828] px-4">
                 <p className="font-[600] text-[20px] text-[#282828] font-poppins">
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
