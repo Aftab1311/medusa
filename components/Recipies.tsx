@@ -1,26 +1,26 @@
-import React from 'react';
-import { RecipiesCard } from './ReusableComponents';
+import React from "react"
+import { RecipiesCard } from "./ReusableComponents"
+import Image from "next/image"
 
 const Recipies = () => {
   return (
-    <div className=" mt-20 container">
-      <div>
+    <div className="w-full mt-20 mb-20">
+      <div className="flex flex-col items-center">
         <div>
-          <img src="/leaf.png" alt="leaf" className="mx-auto" />
+          <Image src="/leaf.png" alt="leaf" width={65} height={45} />
         </div>
         <h3 className="font-poppins text-[34px] font-[500] text-center max-sm:text-[28px]">
           Mom Certified Recipes
         </h3>
       </div>
 
-      <div className="flex justify-between mt-8 max-md:flex-col  ">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 px-2 md:px-4 mt-8 ">
         <RecipiesCard recipie="Ragi Paratha" />
         <RecipiesCard recipie="Ragi Paratha" />
-
         <RecipiesCard recipie="Ragi Paratha" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Recipies;
+export default Recipies

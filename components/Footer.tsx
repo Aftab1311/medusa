@@ -1,106 +1,91 @@
-import React from 'react';
+import React from "react"
 
 const Footer = () => {
   return (
     <div
-      className=" w-[100%] bg-cover h-auto py-12"
+      className="w-full bg-cover bg-center bg-no-repeat bg-[#FF7119] relative"
       style={{ backgroundImage: "url('/footer-bg.png')" }}
     >
-      <div className="container ">
-        <div className=" flex flex-col justify-center w-[45%] mx-auto  pt-24 max-md:w-[100%]">
-          <p className="text-[20px] font-[500] font-poppins text-white max-md:hidden">
-            Newsletter
-          </p>
-          <p className="md:hidden font-yatra font-400 text-[48px] text-white text-center">
-            Balvvardhak
-          </p>
-          <div className=" py-8 relative">
-            <div className="max-w-4xl mx-auto flex items-center justify-center">
+      <div className="w-full mx-auto pt-36 pb-10 px-4 sm:px-6 lg:px-8">
+        <div className="md:hidden w-full flex justify-center mb-4">
+          <h1 className="text-5xl text-white font-bold font-yatra-one">Balvvardhak</h1>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="flex w-full max-w-[700px]">
+            <p className="text-xl text-white">Newsletter</p>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <div className="flex w-full max-w-[700px]">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="px-4 py-2 w-full border  focus:outline-none  rounded-l-3xl rounded-br-3xl"
+                className="px-4 py-2 w-full md:h-[59px] h-[40px] border focus:outline-none rounded-l-3xl rounded-br-3xl"
               />
-              <button className="absolute right-0 border-[#FF7119] border-2 bg-[#FF7119] text-white px-6 py-2 rounded-l-3xl rounded-br-3xl   focus:outline-none">
+              <button className="border-[#FF7119] w-[114px] md:w-[137px]  h-[40px] md:h-[59px] border-2 bg-[#FF7119] text-white px-6 py-2 rounded-l-3xl rounded-br-3xl ml-2 focus:outline-none">
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div
-          className="mt-20  text-white flex justify-between items-center
-         max-md:flex-col max-md:mt-2"
-        >
-          <div className="w-[50%]">
-            <p className="font-yatra font-400 text-[48px] text-white max-md:hidden">
+        <div className="flex justify-center mt-10 md:justify-between items-center flex-wrap">
+          <div className="flex flex-col ">
+            <p className="hidden md:block font-yatra-one font-bold text-4xl text-white">
               Balvvardhak
             </p>
             <div className="flex gap-4">
-              <div>
-                <img src="/insta.png" alt="" className="w-[3rem]" />
-              </div>
-              <div>
-                <img src="/fb.png" alt="" className="w-[3rem]" />
-              </div>
-              <div>
-                <img src="/youtube.png" alt="" className="w-[3rem]" />
-              </div>
-              <div>
-                <img src="x.png" alt="" className="w-[3rem]" />
-              </div>
+              <img src="/insta.png" alt="Instagram" className="w-12" />
+              <img src="/fb.png" alt="Facebook" className="w-12" />
+              <img src="/youtube.png" alt="YouTube" className="w-12" />
+              <img src="x.png" alt="Placeholder" className="w-12" />
             </div>
           </div>
 
-          <div className="w-[50%] flex justify-between  max-md:w-[100%] max-sm:flex-col">
-            <div className="mt-4 w-[33.3%] max-sm:w-[100%]">
-              <p className=" font-poppins font-[500] text-[20px]">
+          <div className="w-full md:w-[70%] mt-8 flex flex-col sm:flex-row sm:justify-between">
+            <div className="">
+              <p className="font-poppins font-[500] text-lg text-white mb-4">
                 Popular Categories
               </p>
-              <div className="mt-6">
-                <p className="font-[400] font-poppins text-[15px]">Shop</p>
-                <p className="font-[400] font-poppins text-[15px] my-2">
+              <div>
+                <p className="font-poppins font-[400] text-base mb-2 text-white text-white">Shop</p>
+                <p className="font-poppins font-[400] text-base mb-2 text-white text-white">
                   Our Story
                 </p>
-                <p className="font-[400] font-poppins text-[15px]">Blog</p>
+                <p className="font-poppins font-[400] text-base text-white text-white">Blog</p>
               </div>
             </div>
-            <div className="mt-4 w-[33.3%] max-sm:w-[100%]">
-              <p className="font-poppins font-[500] text-[20px]">Quick Links</p>
-              <div className="mt-6">
-                <p className="font-[400] font-poppins text-[15px]">Shop</p>
-                <p className="font-[400] font-poppins text-[15px] my-2">
+            <div className="w-full sm:w-1/3 max-md:w-full mt-8 sm:mt-0">
+              <p className="font-poppins font-[500] text-lg text-white mb-4">
+                Quick Links text-white text-white
+              </p>
+              <div>
+                <p className="font-poppins font-[400] text-base mb-2 text-white">Shop</p>
+                <p className="font-poppins font-[400] text-base mb-2 text-white">
                   Our Story
                 </p>
-                <p className="font-[400] font-poppins text-[15px]">Blog</p>
+                <p className="font-poppins font-[400] text-base text-white">Blog</p>
               </div>
             </div>
-            <div className="mt-4 w-[33.3%] max-sm:w-[100%]">
-              <p className="font-poppins font-[500] text-[20px]">
+            <div className="w-full sm:w-1/3 max-md:w-full mt-8 sm:mt-0">
+              <p className="font-poppins font-[500] text-lg text-white mb-4">
                 Contact Details
               </p>
-              <div className="mt-6">
-                <div className="flex">
-                  <div>
-                    <img src="/Mail.png" alt="" />
-                  </div>
-                  <p className="ml-2 font-[400] font-poppins text-[15px]">
+              <div>
+                <div className="flex items-center mb-2">
+                  <img src="/Mail.png" alt="Email" className="w-6 mr-2" />
+                  <p className="font-poppins font-[400] text-base text-white">
                     Email@website.com
                   </p>
                 </div>
-                <div className="flex my-2">
-                  <div>
-                    <img src="/Call.png" alt="" />
-                  </div>
-                  <p className="ml-2 font-[400] font-poppins text-[15px]">
+                <div className="flex items-center mb-2">
+                  <img src="/Call.png" alt="Phone" className="w-6 mr-2" />
+                  <p className="font-poppins font-[400] text-base text-white">
                     98765443210
                   </p>
                 </div>
-                <div className="flex">
-                  <div>
-                    <img src="/loc.png" alt="" />
-                  </div>
-                  <p className=" ml-2 font-[400] font-poppins text-[15px]">
+                <div className="flex items-center">
+                  <img src="/loc.png" alt="Location" className="w-6 mr-2" />
+                  <p className="font-poppins font-[400] text-base text-white">
                     Address, Street, City, India - 567890
                   </p>
                 </div>
@@ -108,13 +93,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <p className="text-center text-white mt-20 text-[20px] font-[500] font-poppins">
+        <p className="text-center text-white mt-8 text-lg font-[500] font-poppins">
           2024 Balvvardhak. All rights reserved.
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -10,3 +10,9 @@
 
 /* Custom Global Styles */
 /* Add any additional global styles here */
+*{
+    margin: 0;
+    padding: 0;
+ /* border: 1px solid red;  */
+}
+

@@ -1,35 +1,40 @@
-import React from 'react';
-import { CategoriesCard } from './ReusableComponents';
+import React from "react"
+import { CategoriesCard } from "./ReusableComponents"
+import Image from "next/image"
 
 const Categories = () => {
   return (
-    <div className="mt-20 container">
-      <div>
+    <div className=" w-full flex flex-col justify-center mt-20">
+      <div className="w-full h-[123px] flex flex-col items-center justify-center ">
         <div>
-          <img src="leaf.png" alt="leaf" className="mx-auto" />
+          <Image src="/leaf.png" alt="leaf" width={65} height={45} />
         </div>
         <p className="font-poppins text-[34px] font-[500] text-center max-sm:text-[28px]">
           Categories
         </p>
       </div>
-      <div className="  gap-4 mt-12 justify-center flex max-md:inline-block max-md:w-[100%]">
-        <div className="flex gap-4 max-md:justify-center ">
-          <CategoriesCard text="Khichdi Mix" />
-          <CategoriesCard text="Ragi Mix" />
+      <div className="w-full  gap-4 mt-12 justify-center flex flex-wrap  hover:rotate-0 mb-10 ">
+        <div className="w-1/6 min-w-[150px] ">
+        <CategoriesCard text="Khichdi Mix" />
         </div>
-        <div className="flex gap-4 max-md:my-4 max-md:justify-center">
-          <CategoriesCard text="Cereal Mix" />
-          <CategoriesCard text="Sattu Mix" />
+        <div className="w-1/6 min-w-[150px]">
+        <CategoriesCard text="Ragi Mix" />
         </div>
-        <div className="max-md:w-[40%]  max-md:mx-auto max-sm:w-[50%]">
-          <CategoriesCard text="Pulses Mix" />
+        <div className="w-1/6 min-w-[150px]">
+        <CategoriesCard text="Cereal Mix" />
         </div>
-      </div>
-      <div className="mt-10">
-        <img src="add-banner.png" alt="" />
+        <div className="w-1/6 min-w-[150px]">
+        <CategoriesCard text="Sattu Mix" />
+        </div>
+        <div className="w-1/6 min-w-[150px]">
+        <CategoriesCard text="Pulses Mix" />
+        </div>
+        </div>
+      <div className="w-auto mt-10">
+        <Image src="/add-banner.png" alt="banner" width={3000} height={200} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Categories;
+export default Categories

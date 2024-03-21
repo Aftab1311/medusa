@@ -1,28 +1,35 @@
 import React from 'react';
 import { RootsCard } from './ReusableComponents';
+import Image from 'next/image';
 
 const HealthyRoots = () => {
   return (
-    <div className=" mt-20 container">
-      <div>
+    <div className="w-full mt-20">
+      <div className='w-full flex flex-col items-center'>
         <div>
-          <img src="leaf.png" alt="leaf" className="mx-auto" />
+          <Image src="/leaf.png" width={65} height={45}/>
         </div>
         <p className="font-poppins text-[34px] font-[500] text-center max-sm:text-[28px]">
           Our Healthy roots
         </p>
       </div>
-      <div className=" gap-3 mt-8 justify-center flex max-md:inline-block max-md:w-[100%] max-sm:mt-6">
-        <div className="flex gap-3 max-md:justify-center">
-          <RootsCard text="Small Local Farmers" />
-          <RootsCard text="Small Local Farmers" />
-        </div>
-        <div className="flex gap-3 max-md:justify-center">
-          <RootsCard text="Small Local Farmers" />
+      <div className=" gap-3 mt-8 justify-center flex flex-wrap">
+        <div className="w-[15%] min-w-[163px]">
           <RootsCard text="Small Local Farmers" />
         </div>
-        <div className="flex gap-3 max-md:justify-center">
+        <div className="w-[15%] min-w-[163px]">
           <RootsCard text="Small Local Farmers" />
+        </div>
+        <div className="w-[15%] min-w-[163px]">
+          <RootsCard text="Small Local Farmers" />
+        </div>
+        <div className="w-[15%] min-w-[163px]">
+          <RootsCard text="Small Local Farmers" />
+        </div>
+        <div className="w-[15%] min-w-[163px]">
+          <RootsCard text="Small Local Farmers" />
+        </div>
+        <div className="w-[15%] min-w-[163px]">
           <RootsCard text="Small Local Farmers" />
         </div>
       </div>

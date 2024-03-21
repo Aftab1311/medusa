@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface SmallButtonProps {
   content: string;
@@ -39,7 +40,7 @@ const CategoriesCard: React.FC<CategoriesCardProps> = ({ text }) => {
         <img
           src="/category-img.png"
           alt="carrot img"
-          className=" -rotate-3 hover:rotate-0 origin-top-left duration-300 -ml-4 cursor-pointer"
+          className=" -rotate-6 hover:rotate-0 origin-top-left duration-300 -ml-4 cursor-pointer"
         />
       </div>
       <h4 className="text-[20px] font-poppins font-[300] text-center mt-2 pb-2 max-sm:font-[500]">
@@ -55,73 +56,47 @@ interface BestSellerCardProps {
 }
 
 const BestSellerCard: React.FC<BestSellerCardProps> = ({ content }) => {
-  return (
-    <div className="border-white rounded-[40px] border-4  py-8  h-auto max-sm:py-4 max-sm:rounded-[20px]">
-      <div className="flex justify-between px-4 max-sm:flex-col ">
-        <div className="flex gap-3 ">
-          <div className="">
-            <p
-              className="font-[600] font-Poppins text-[12px] bg-[#FAB143] px-2 py-1  rounded-sm uppercase
-              max-md:text-[10px]
-              max-sm:text-[8px]
-              "
-            >
-              New Launch
-            </p>
-          </div>
-          <div>
-            <p
-              className="font-[600] font-Poppins text-[12px] bg-[#89A809] px-2 py-1  rounded-sm
-              max-md:text-[10px]
-              max-sm:text-[8px]
-              "
-            >
-              Instant Cereal
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-1 max-sm:mt-2">
-          <div>
-            <img src="/star.png" alt="stars" />
-          </div>
-          <p className="font-[600] font-Poppins text-[12px] my-auto">4.1(12)</p>
-        </div>
+  return (<div className="border-white rounded-[40px] border-4 py-8 h-auto max-sm:py-4 max-sm:rounded-[20px]">
+  <div className="flex justify-around items-center px-1 flex-col md:flex-row ">
+    <div className="flex gap-2 ">
+      <div className="w-full flex items-center text-center">
+        <p className="w-full font-bold font-Poppins text-[8px] py-1 lg:text-[10px] bg-[#FAB143] rounded-sm uppercase">
+          New Launch
+        </p>
       </div>
-      <div>
-        <img
-          src="/best-seller-box.png"
-          alt=""
-          className="mx-auto my-8 max-sm:w-[90px] max-sm:my-2"
-        />
-      </div>
-      <p
-        className="font-poppins text-[20px] font-[500] text-center
-        max-sm:text-[12px] 
-        "
-      >
-        {content}
-      </p>
-      <p
-        className="font-[400] text-[15px] text-center my-4
-        max-sm:text-[12px] max-sm:my-2
-        "
-      >
-        Ragi Malt | Dark Chocolate | Honey
-      </p>
-      <p
-        className="font-poppins font-[500] text-[#FF7119] text-[20px] text-center
-        max-sm:text-[14px]
-        "
-      >
-        <span className="font-poppins font-[300] text-[#A7A8AB] text-[20px] mr-3 line-through">
-          &#8377;999.00{' '}
-        </span>{' '}
-        &#8377;999.00
-      </p>
-      <div className="mt-4 w-[60%] mx-auto max-sm:w-[90%]">
-        <BigButton content="Buy Now" />
+      <div className='w-full flex items-center text-center'>
+        <p className="w-[75px]  font-semibold font-Poppins text-[10px] bg-[#89A809] px-1 py-1 rounded-sm">
+          Instant Cereal
+        </p>
       </div>
     </div>
+    <div className="flex gap-1 max-sm:mt-2">
+      <div>
+        <img src="/star.png" alt="stars" />
+      </div>
+      <p className="font-[600] font-Poppins text-[12px] my-auto">4.1(12)</p>
+    </div>
+  </div>
+  <div>
+    <img src="/best-seller-box.png" alt="" className="mx-auto my-8 max-sm:w-[90px] max-sm:my-2" />
+  </div>
+  <p className="font-poppins text-[20px] font-[500] text-center max-sm:text-[12px]">
+    {content}
+  </p>
+  <p className="font-[400] text-[15px] text-center my-4 max-sm:text-[12px] max-sm:my-2">
+    Ragi Malt | Dark Chocolate | Honey
+  </p>
+  <p className="font-poppins font-[500] text-[#FF7119] text-[20px] text-center max-sm:text-[14px]">
+    <span className="font-poppins font-[300] text-[#A7A8AB] text-[20px] mr-3 line-through">
+      &#8377;999.00{' '}
+    </span>{' '}
+    &#8377;999.00
+  </p>
+  <div className="mt-4 w-[60%] mx-auto max-sm:w-[90%]">
+    <BigButton content="Buy Now" />
+  </div>
+</div>
+
   );
 };
 
@@ -132,7 +107,7 @@ interface RootsCardProps {
 const RootsCard: React.FC<RootsCardProps> = ({ text }) => {
   return (
     <div className=" bg-white rounded-xl overflow-hidden ease-in-out  max-md:mt-3">
-      <h4 className="text-[27px] font-paytone font-[400] text-start mt-2 pb-2 pl-2 max-sm:text-[16px]">
+      <h4 className="text-2xl font-paytone font-bold text-start mt-2 pb-2 pl-2 max-sm:text-[16px]">
         {' '}
         {text}
       </h4>
@@ -154,7 +129,7 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ date }) => {
   return (
     <div
-      className="group cursor-pointer w-[460px] h-auto relative rounded-3xl  overflow-hidden
+      className="group cursor-pointer relative rounded-3xl  overflow-hidden
       max-md:w-[100%] max-md:mt-6
       "
     >
@@ -206,45 +181,41 @@ interface RecipiesCardProps {
 
 const RecipiesCard: React.FC<RecipiesCardProps> = ({ recipie }) => {
   return (
-    <div
-      className="w-[430px] h-[410px] bg-white overflow-hidden rounded-2xl 
-       max-md:w-[100%] max-md:mt-6"
-    >
-      <div className="px-4 pt-4">
-        <p className="font-paytone font-[400] text-[#282828] text-[27px]">
-          {recipie}
-        </p>
-        <div className="flex justify-between mt-4 items-center">
-          <div className="flex  gap-2">
-            <div>
-              <img src="/time.png" alt="" className="w-[20px]" />
-            </div>
-            <p className="font-poppins text-[15px] font-[400]">20 mins</p>
-          </div>
-          <div className="flex gap-2">
-            <p
-              className="font-[600] font-Poppins text-[12px] bg-[#FAB143] px-2 py-1  rounded-[5px]
-            max-md:text-[10px]
-            max-sm:text-[8px]
-            "
-            >
-              Breakfast
-            </p>
-            <p
-              className="font-[600] font-Poppins text-[12px] bg-[#7B61FF] px-2 py-1  rounded-[5px]
-            max-md:text-[10px]
-            max-sm:text-[8px]
-            "
-            >
-              2 months +
-            </p>
-          </div>
-        </div>
+    <div className="bg-white overflow-hidden rounded-2xl">
+      <div className='md:hidden w-full flex justify-around mt-4'>
+        <button className='px-2 py-1 rounded-md bg-[#fab143] text-[8px] font-bold uppercase'>New Launch</button>
+        <button className='px-2 py-1 rounded-md bg-[#89a809] text-[8px] font-bold'>Instant cereal</button>
       </div>
-      <div className="mt-8">
-        <img src="/recipe-img.png" alt="" />
+  <div className="px-4 pt-4">
+    <p className="font-paytone font-bold text-[#282828] text-base md:text-3xl">
+      {recipie}
+    </p>
+    <div className="hidden md:flex justify-between mt-2 md:mt-4 items-center flex-wrap ">
+      <div className="w-full md:w-auto flex gap-2 justify-center items-center">
+        <div className=''>
+          <img src="/time.png" alt="" className="w-[20px]" />
+        </div>
+        <p className="font-poppins text-base font-semibold">20 mins</p>
+      </div>
+      <div className=" flex items-center justify-center gap-2">
+        <p
+          className="font-semibold font-Poppins text-sm bg-[#FAB143] px-1 py-1 rounded-sm "
+        >
+          Breakfast
+        </p>
+        <p
+          className="font-semibold text-white font-Poppins text-sm bg-[#7B61FF] px-2 py-1 rounded-sm"
+        >
+          2 months +
+        </p>
       </div>
     </div>
+  </div>
+  <div className=" mt-2 md:mt-8 md:h-[271px]">
+    <img src="/recipe-img.png" alt="" className="w-full h-full object-cover" />
+  </div>
+</div>
+
   );
 };
 
@@ -327,9 +298,9 @@ const SearchBox: React.FC = () => {
 
 const BlogPageSideCard = () => {
   return (
-    <div className="flex gap-2 mt-6 pt-6">
-      <div className=" w-[50%]">
-        <img src="/kid.png" alt="" className="h-full rounded-xl" />
+    <div className="w-full flex gap-2 mt-6 pt-6">
+      <div className="lg:flex w-[150px] h-[80px] hidden">
+        <Image src="/kid.png" alt="" width={200} height={200} />
       </div>
       <div className="">
         <h4 className="font-poppins font-[300] text-[18px]">March, 2023</h4>

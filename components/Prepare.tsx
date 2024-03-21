@@ -1,45 +1,45 @@
-import React from 'react';
+import React from "react"
+import Image from "next/image"
 
 const Prepare = () => {
   return (
-    <div className=" mt-20 container">
-      <div>
+    <div className="w-full mt-20">
+      <div className="flex flex-col items-center">
         <div>
-          <img src="/leaf.png" alt="leaf" className="mx-auto" />
+          <Image src="/leaf.png" alt="leaf" width={65} height={45} />
         </div>
         <h3 className="font-poppins text-[34px] font-[500] text-center max-sm:text-[28px]">
           How to prepare
         </h3>
       </div>
-
-      <div className="flex justify-between max-md:flex-col max-md:mx-auto ">
-        <div>
-          <div>
-            <img src="/step1.png" alt="" className="max-md:mx-auto" />
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+        <div className="">
+          <div className="max-w-[400px] mx-auto">
+            <Image src="/step1.png" alt="" width={400} height={100} />
           </div>
           <p className="font-poppins font-[500] text-[20px] text-center max-sm:text-[14px]">
-            Empty packet in a bowl and add warm water.{' '}
+            Empty packet in a bowl and add warm water.{" "}
           </p>
         </div>
-        <div>
-          <div>
-            <img src="/step2.png" alt="" className="max-md:mx-auto" />
+        <div className="">
+          <div className="max-w-[400px] mx-auto">
+            <Image src="/step2.png" alt="" width={400} height={100} />
           </div>
           <p className="font-poppins font-[500] text-[20px] text-center max-sm:text-[14px]">
-            Empty packet in a bowl and add warm water.{' '}
+            Empty packet in a bowl and add warm water.{" "}
           </p>
         </div>
-        <div>
-          <div>
-            <img src="/step3.png" alt="" className="max-md:mx-auto" />
+        <div className="">
+          <div className="max-w-[400px] mx-auto">
+            <Image src="/step3.png" alt="" width={400} height={100} />
           </div>
           <p className="font-poppins font-[500] text-[20px] text-center max-sm:text-[14px]">
-            Empty packet in a bowl and add warm water.{' '}
+            Empty packet in a bowl and add warm water.{" "}
           </p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Prepare;
+export default Prepare
