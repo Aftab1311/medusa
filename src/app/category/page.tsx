@@ -1,6 +1,7 @@
 'use client';
 import { BestSellerCard } from '../../../components/ReusableComponents';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Page = () => {
   const [sortBy, setSortBy] = useState<string>('');
@@ -16,25 +17,21 @@ const Page = () => {
   ];
 
   return (
-    <div>
-      <div className=" relative">
-        <img
+    <div className='w-full'>
+      <div className="relative">
+        <Image
           src="/about-head.png"
-          alt=""
-          className=" w-[100%] max-sm:h-[20vh] "
+          alt="abouthead"
+          width={3000}
+          height={400}
+          className="w-full"
         />
-        <h2
-          className="absolute top-32 font-poppins font-[700] text-[48px]  ml-32 z-0
-            max-lg:top-20 max-lg:text-[30px]
-             max-md:ml-20 max-md:top-12
-             max-sm:ml-4 max-sm:text-[24px]
-          "
-        >
-          Ragi Sattva
+        <h2 className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl md:text-4xl lg:text-6xl md:top-20 lg:top-36 text-center w-full">
+          Ragi-sattva
         </h2>
       </div>
 
-      <div className="container mt-24 flex md:gap-[5%] max-lg:mt-16 max-sm:mt-8">
+      <div className="w-full px-4 md:px-10 mt-24 flex gap-10">
         <div className="w-[20%] mt-20 max-md:hidden">
           <div className="flex justify-between">
             <p className="font-[500] font-poppins text-[20px]">Filter</p>
@@ -53,7 +50,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 6 Months +
@@ -67,7 +64,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                htmlFor="default-checkbox" // Replace ' htmlFor' with 'htmlFor'
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 7 Months +
@@ -81,7 +78,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 8 Months +
@@ -95,7 +92,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 9 Months +
@@ -109,7 +106,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 11 Months +
@@ -128,7 +125,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 Khichdi Mix
@@ -142,7 +139,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 Ragi Mix
@@ -156,7 +153,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 Cereal Mix
@@ -170,7 +167,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 Sattu Mix
@@ -184,7 +181,7 @@ const Page = () => {
                 className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
               />
               <label
-                for="default-checkbox"
+                 htmlFor="default-checkbox"
                 className="ms-2 text-[15px] font-[400] text-black font-poppins"
               >
                 Pluses Mix

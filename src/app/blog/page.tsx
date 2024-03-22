@@ -5,29 +5,19 @@ import {
   SearchBox,
 } from "../../../components/ReusableComponents"
 
+import Image from "next/image"
+
 const Page = () => {
   return (
     <div>
       <div className=" relative">
-        <img
-          src="/blog-head.png"
-          alt=""
-          className=" w-[100%] max-sm:h-[20vh] "
-        />
-        <h2
-          className="absolute top-32 font-poppins font-[500] text-[36px]  ml-32 z-0 leading-[40px]
-            max-lg:top-20 max-lg:text-[30px]
-             max-md:ml-20 max-md:top-12
-             max-sm:ml-4 max-sm:text-[24px]
-          "
-        >
-          <span className="font-poppins font-[400] text-[15px]">Our Blogs</span>{" "}
-          <br />
-          Latest Posts
+        <Image src="/blog-head.png" alt="" width={2000} height={400} />
+        <h2 className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl md:text-4xl lg:text-6xl md:top-20 lg:top-36 text-center w-full">
+          Latest Blogs
         </h2>
       </div>
 
-      <div className="container mt-6 flex gap-5">
+      <div className="w-full px-10 mt-6 flex gap-5">
         <div className="w-[75%] max-md:w-[100%]">
           <div className="flex gap-2 mt-4">
             <div className="flex items-center ">
@@ -43,7 +33,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <p className="font-[500] text-[48px] font-poppins max-sm:leading-tight max-sm:text-[35px]">
+          <p className="font-[500] text-3xl md:text-4xl lg:text-5xl font-poppins max-sm:leading-tight ">
             Why are grains important for kids?
           </p>
           <p className="font-poppins font-[300] text-[20px] my-6">
@@ -116,10 +106,10 @@ const Page = () => {
             <p className="w-8 h-8 bg-[#89A809] rounded-3xl"></p>
           </div>
 
-          <div className="flex justify-between max-md:flex-col">
-            <div className="flex gap-2 mt-6 pt-6 w-[30%] max-md:w-[100%]">
-              <div className=" w-[50%] ">
-                <img src="/kid.png" alt="" className="h-full rounded-xl" />
+          <div className="flex justify-between flex-col md:flex-row">
+            <div className="flex gap-2 mt-6 pt-6 w-1/2 max-md:w-[100%]">
+              <div className=" w-[200px] flex ">
+                <Image src="/kid.png" alt="" width={500} height={500} />
               </div>
               <div className="">
                 <h4 className="font-poppins font-[300] text-[18px] uppercase text-start">
@@ -131,7 +121,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex gap-2 mt-6 pt-6 w-[30%] max-md:w-[100%]">
+            <div className="flex gap-2 mt-6 pt-6 w-1/2 max-md:w-[100%]">
               <div className="">
                 <h4 className="font-poppins font-[300] text-[18px] uppercase text-end">
                   next
@@ -140,14 +130,14 @@ const Page = () => {
                   Why are grains important for kids?
                 </h4>
               </div>
-              <div className=" w-[50%]">
-                <img src="/kid.png" alt="" className="h-full rounded-xl" />
+              <div className=" w-[200px] flex ">
+              <Image src="/kid.png" alt="" width={500} height={500} />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="w-[25%] max-md:hidden">
+        <div className="hidden md:block">
           <div>
             <SearchBox />
             <h3 className="mt-6 text-[36px] font-[500] font-poppins">

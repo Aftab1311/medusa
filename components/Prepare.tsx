@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Prepare = () => {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-20 px-2 md:px-8">
       <div className="flex flex-col items-center">
         <div>
           <Image src="/leaf.png" alt="leaf" width={65} height={45} />

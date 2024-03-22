@@ -1,4 +1,3 @@
-import React from "react"
 import Image from "next/image"
 
 const Page = () => {
@@ -69,7 +68,7 @@ const Page = () => {
             className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
           />
           <label
-            for="default-checkbox"
+            htmlFor="default-checkbox"
             className="ms-2 text-[15px] font-[400] text-black font-poppins"
           >
             Ingredient1{" "}
@@ -86,7 +85,7 @@ const Page = () => {
             className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
           />
           <label
-            for="default-checkbox"
+            htmlFor="default-checkbox"
             className="ms-2 text-[15px] font-[400] text-black font-poppins"
           >
             Ingredient1{" "}
@@ -103,7 +102,7 @@ const Page = () => {
             className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
           />
           <label
-            for="default-checkbox"
+            htmlFor="default-checkbox"
             className="ms-2 text-[15px] font-[400] text-black font-poppins"
           >
             Ingredient1{" "}
@@ -120,7 +119,7 @@ const Page = () => {
             className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
           />
           <label
-            for="default-checkbox"
+            htmlFor="default-checkbox"
             className="ms-2 text-[15px] font-[400] text-black font-poppins"
           >
             Ingredient1{" "}
@@ -137,7 +136,7 @@ const Page = () => {
             className="w-4 h-4 text-blue-600 bg-white border-gray-300 rounded accent-[#FF7119]"
           />
           <label
-            for="default-checkbox"
+            htmlFor="default-checkbox"
             className="ms-2 text-[15px] font-[400] text-black font-poppins"
           >
             Ingredient1{" "}

@@ -1,24 +1,25 @@
 import React from "react"
 import { BlogCard } from "./ReusableComponents"
+import Image from "next/image"
 
 const Blogs = () => {
   return (
-    <div className="w-full mt-20 mb-20">
+    <div className="w-full my-20 px-2 md:px-8">
       <div>
-        <div>
-          <img src="leaf.png" alt="leaf" className="mx-auto" />
+        <div className="w-full flex justify-center">
+          <Image src="/leaf.png" alt="leaf" width={65} height={45} />
         </div>
         <p className="font-poppins text-[34px] font-[500] text-center max-sm:text-[28px]">
           Blogs
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 md:px-8 lg:px-10">
-          <div className="">
+        <div className="flex gap-10 flex-wrap justify-around">
+          <div className="w-[350px]">
             <BlogCard date="9th" />
           </div>
-          <div className="">
+          <div className="w-[350px]">
             <BlogCard date="19th" />
           </div>
-          <div className="">
+          <div className="w-[350px]">
             <BlogCard date="29th" />
           </div>
         </div>

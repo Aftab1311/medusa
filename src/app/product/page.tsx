@@ -7,9 +7,9 @@ import {
   
   const page = () => {
     return (
-      <div className="container mt-12 flex gap-5">
-        <div className="md:w-[80%] ">
-          <div className="md:hidden mb-6">
+      <div className="w-full mt-12 flex gap-5 px-2 md:px-8">
+        <div className="w-full md:w-[80%] ">
+          <div className="hidden md:block mb-6">
             <div className="flex gap-3 ">
               <div className="">
                 <p
@@ -139,7 +139,7 @@ import {
                   &#8377;999.00
                 </p>
               </div>
-              <div className="flex gap-5 mt-3">
+              <div className="flex justify-center md:justify-start gap-5 mt-3">
                 <div className="flex flex-col justify-center items-center">
                   <p
                     className="w-12 h-12 rounded-3xl bg-[#A7A8AB] mb-4
@@ -246,7 +246,7 @@ import {
           </div>
         </div>
   
-        <div className="w-[20%] max-md:hidden">
+        <div className="w-[20%] hidden lg:block">
           <p className="font-poppins font-[700] text-[24px]">Cart</p>
           <div className="mt-6 mb-4 pb-4 border-b-2 border-[#A7A8AB] flex justify-between gap-2">
             <div className="w-[102px] h-[102px] border-2 border-[#A7A8AB] rounded-2xl px-6 py-4">
@@ -269,7 +269,7 @@ import {
               <p className="font-poppins font-[400]">₹999.00</p>
             </div>
             <div className="flex justify-between mt-4">
-              <div className="w-[48%]">
+              <div className="w-1/2">
                 <BigButton content="View Cart" />
               </div>
               <div className="w-[48%]">

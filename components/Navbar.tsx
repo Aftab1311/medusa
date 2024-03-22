@@ -45,7 +45,7 @@ const Navbar = () => {
       )}
 
       {showNav && (
-        <div className="w-full flex flex-col gap-4 absolute top-24 cursor-pointer text-base font-poppins text-center pb-10 left-0 h-auto bg-white rounded-md z-10 ">
+        <div className="w-full flex flex-col gap-4 absolute top-24 cursor-pointer text-base font-poppins text-center pb-10 left-0 h-auto bg-white rounded-md z-20 ">
           <Link href="/">Home</Link>
         <Link href="/ourstory">Our Story</Link>
         <Link href="/recipes">Our Recipes</Link>

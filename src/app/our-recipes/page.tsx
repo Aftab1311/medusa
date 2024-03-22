@@ -11,7 +11,7 @@ const Page = () => {
   }
 
   return (
-    <div className="">
+    <div className=" w-full">
       <div className="relative">
         <Image
           src="/recipe-head.png"
@@ -25,7 +25,7 @@ const Page = () => {
         </h2>
       </div>
 
-      <div className="mt-20 w-full flex flex-col px-6">
+      <div className="mt-20 w-full flex flex-col">
         <div className="w-full flex items-center">
         <Image src="/leaf.png" alt="leaf" width={65} height={45} className="mb-2 mx-auto" />
         </div>
@@ -33,7 +33,7 @@ const Page = () => {
           In Spotlight
         </h3>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 px-2 md:px-4 mt-8 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10  px-2 md:px-8 mt-8 ">
         <RecipiesCard recipie="Ragi Paratha" />
         <RecipiesCard recipie="Ragi Paratha" />
         <RecipiesCard recipie="Ragi Paratha" />
@@ -48,7 +48,7 @@ const Page = () => {
           Supergrain in every meal
         </h3>
 
-        <div className="flex justify-center gap-3">
+        <div className="flex justify-center gap-3 px-2 md:px-8 pb-8">
           <div
             className={`tab ${
               activeTab === 1
@@ -95,7 +95,7 @@ const Page = () => {
           {activeTab === 4 && ""}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 px-2 md:px-4 mt-8 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 px-2 md:px-8 ">
         <RecipiesCard recipie="Ragi Paratha" />
         <RecipiesCard recipie="Ragi Paratha" />
         <RecipiesCard recipie="Ragi Paratha" />
@@ -157,7 +157,7 @@ const Page = () => {
           {activeTab === 4 && ""}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 lg:px-8 px-2 md:px-4 mt-8 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10 px-2 md:px-8 mt-8 ">
         <RecipiesCard recipie="chilla Paratha" />
         <RecipiesCard recipie="chilla Paratha" />
         <RecipiesCard recipie="chilla Paratha" />

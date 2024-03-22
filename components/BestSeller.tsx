@@ -1,12 +1,13 @@
 import React from "react"
 import { BestSellerCard } from "./ReusableComponents"
+import Image from "next/image"
 
 const BestSeller = () => {
   return (
-    <div className="w-full">
+    <div className="w-full py-10 px-2 md:px-8">
       <div>
-        <div>
-          <img src="leaf.png" alt="leaf" className="mx-auto" />
+        <div className="w-full flex justify-center">
+        <Image src="/leaf.png" alt="leaf" width={65} height={45} />
         </div>
         <p className="font-poppins text-[34px] font-[500] text-center">
           Best Sellers

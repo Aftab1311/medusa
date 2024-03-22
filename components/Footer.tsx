@@ -28,9 +28,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-10 md:justify-between items-center flex-wrap">
+        <div className="flex justify-center mt-10 md:justify-between items-center flex-wrap md:flex-col gap-8 md:gap-10 lg:flex-row">
           <div className="flex flex-col ">
-            <p className="hidden md:block font-yatra-one font-bold text-4xl text-white">
+            <p className="hidden md:block  font-yatra-one font-bold text-4xl text-white">
               Balvvardhak
             </p>
             <div className="flex gap-4">
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[70%] mt-8 flex flex-col sm:flex-row sm:justify-between">
+          <div className="w-full lg:w-[70%] flex flex-col md:flex-row justify-around">
             <div className="">
               <p className="font-poppins font-[500] text-lg text-white mb-4">
                 Popular Categories
@@ -54,9 +54,9 @@ const Footer = () => {
                 <p className="font-poppins font-[400] text-base text-white text-white">Blog</p>
               </div>
             </div>
-            <div className="w-full sm:w-1/3 max-md:w-full mt-8 sm:mt-0">
+            <div className="">
               <p className="font-poppins font-[500] text-lg text-white mb-4">
-                Quick Links text-white text-white
+                Quick Links
               </p>
               <div>
                 <p className="font-poppins font-[400] text-base mb-2 text-white">Shop</p>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <p className="font-poppins font-[400] text-base text-white">Blog</p>
               </div>
             </div>
-            <div className="w-full sm:w-1/3 max-md:w-full mt-8 sm:mt-0">
+            <div className="">
               <p className="font-poppins font-[500] text-lg text-white mb-4">
                 Contact Details
               </p>

@@ -6,13 +6,15 @@
 @tailwind utilities;
 
 /* Import Google Fonts (Yatra One) */
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
 
 /* Custom Global Styles */
 /* Add any additional global styles here */
-*{
-    margin: 0;
-    padding: 0;
- /* border: 1px solid red;  */
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red;  */
 }
-
+body {
+  background-color: #f8f5ee;
+}
